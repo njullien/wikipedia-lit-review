@@ -1,0 +1,182 @@
+\subsection{Generating and evaluating the initial set of contributors profiles}
+
+We started by generating an initial set of $25$ contributor profiles so that each of the $5$ ordinal levels of the criteria scales is uniformly distributed for each criterion. The community manager was asked to assign these profiles to one of the three selected categories. We illustrate this dataset and the community managers assignments in Table~\ref{tab:ex1-step1}.
+
+\begin{table}
+\caption{The initial set of contributor profiles and their assignment by the community manager;}\label{tab:ex1-step1}
+\small
+
+\begin{longtable}{cccccc|c|c|c}
+Profile& \multicolumn{5}{c}{Criteria} & \multicolumn{3}{c}{Category}\\
+number& $c_1$ & $c_2$ & $c_3$ & $c_4$ & $c_5$ & \multicolumn{1}{c}{Good} & \multicolumn{1}{c}{Neutral} & \multicolumn{1}{c}{Bad}\\\hline
+1 & v. good &    good &  v. bad & v. good & neutral &     &            &       \correct     \\\hline
+2 &    bad & v. good & neutral &  v. bad & neutral &            &     \correct        &           \\\hline
+3 &    bad &     bad &     bad &     bad &    good &            &            &     \correct       \\\hline
+4 &    bad &     bad &  v. bad & v. good & neutral &            &            &       \correct    \\\hline
+5 &   good &  v. bad & v. good &     bad &     bad &            &      \correct      &           \\\hline
+6 &v. good &    good & v. good & neutral & v. good &       \correct     &            &           \\\hline
+7 &   good & neutral &     bad & neutral & v. good &            &       \correct     &           \\\hline
+8 &neutral & neutral &    good &     bad &    good &        \correct    &            &           \\\hline
+9 &neutral & v. good & neutral &    good &     bad &            &            &      \correct     \\\hline
+10& v. bad &    good & v. good &  v. bad &     bad &            &            &      \correct     \\\hline
+11&   good &    good &    good &  v. bad & v. good &       \correct     &            &           \\\hline
+12&neutral & v. good &    good &  v. bad &    good &            &   \correct         &           \\\hline
+13&   good &    good & neutral & neutral &  v. bad &            &            &     \correct      \\\hline
+14&v. good & neutral &  v. bad &     bad &    good &            &            &    \correct       \\\hline
+15&neutral &     bad &     bad &  v. bad & neutral &            &            &    \correct       \\\hline
+16&    bad & v. good &    good & v. good &  v. bad &            &            &       \correct    \\\hline
+17&neutral &     bad & neutral &    good & neutral &            &            &      \correct     \\\hline
+18&v. good &  v. bad & v. good &    good &     bad &            &       \correct     &           \\\hline
+19&v. good &  v. bad & neutral & neutral &  v. bad &            &            &     \correct      \\\hline
+20& v. bad & v. good & v. good &     bad & v. good &            &      \correct      &           \\\hline
+21& v. bad & neutral &  v. bad & neutral &  v. bad &            &            &      \correct     \\\hline
+22& v. bad &     bad &  v. bad & v. good &    good &            &            &      \correct     \\\hline
+23& v. bad &  v. bad &    good &    good & v. good &            &     \correct       &           \\\hline
+24&   good &  v. bad &     bad &    good &  v. bad &            &            &       \correct    \\\hline
+25&    bad & neutral &     bad & v. good &     bad &            &            &  \correct         \\\hline
+\end{longtable}
+\end{table}
+
+\subsection{Determining the complexity of the first model}
+
+We continued by testing whether an MR-Sort model was able to represent the provided assignments and found that only at most $23$ out of the $25$ were captured. We therefore proceeded to generate series of sets of $2$ profiles along with their alternative class assignments which would render an MR-Sort model to fit. These sets of profiles are illustrated in Table~\ref{tab:ex1-step2}.
+
+\begin{table}
+\caption{2}\label{tab:ex1-step2}
+\small
+
+\begin{tabular}{ccccccc||c|c}
+&Profile& \multicolumn{5}{c}{Criteria} & \multicolumn{2}{|c}{Category} \\
+&number& $c_1$ & $c_2$ & $c_3$ & $c_4$ & $c_5$ & \multicolumn{1}{c}{original} & \multicolumn{1}{c}{alternative} \\\hline
+\multirow{2}{*}{First set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral &  Neutral & Bad \\
+&         8 &    neutral &    neutral &       good &        bad &       good & Good & Neutral \\\hline
+         
+\multirow{2}{*}{Second set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral &  Neutral & Bad \\
+&        11 &       good &       good &       good &      v.bad &     v.good & Good & Neutral \\\hline
+        
+\multirow{2}{*}{Third set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral &  Neutral & Bad \\
+&        12 &    neutral &     v.good &       good &      v.bad &       good & Neutral & Good  \\
+        
+\end{tabular}
+\end{table}
+
+Using these sets, we devised a series of questions to ask the community manager, in order to simplify his task of accepting or rejecting these alternative assignments. Since the second contributor profile appears in all of the three sets, we have decided to first ask him whether he would agree to change his assignment of this profile from Neutral to Bad. The CM agrees to change his assignment if needed, as he confirms he has initially hesitated between these two categories. We continue by asking him whether he would also agree to change the assignments of any of other profiles from each of the three sets, however, in all cases, he disagrees. As a result, we increase the complexity of the model and find that an MR-Sort model with vetoes is able to capture all $25$ profile assignments.
+
+\input{input/ex1-model1.tex}
+
+The resulting model is illustrated in Fig.~\ref{fig:ex1-model1}, where we have divided in two the elements delimiting the first two classes (Bad and Neutral), and those delimiting the last two classes (Neutral and Good). The lines correspond to the delimiting profiles, while the filled in areas represent the ranges of values which would trigger a veto.
+
+We decide to continue with a new iteration.
+
+\subsection{Generating and evaluating an additional set of profiles}
+
+An additional set of $10$ profiles is generated, based on the previously created model. This set is presented to the CM who then assigns them as seen in Table~\ref{tab:ex1-step3}.
+
+\begin{table}
+\caption{3}\label{tab:ex1-step3}
+\small
+
+\begin{tabular}{cccccc|c|c|c}
+Profile& \multicolumn{5}{c}{Criteria} & \multicolumn{3}{c}{Category}\\
+number& $c_1$ & $c_2$ & $c_3$ & $c_4$ & $c_5$ & \multicolumn{1}{c}{Good} & \multicolumn{1}{c}{Neutral} & \multicolumn{1}{c}{Bad}\\\hline
+26& v.good & v.good & neutral & bad & bad &            &            &      \correct      \\\hline
+27& v.good & bad & neutral & v.good & bad &            &            &   \correct         \\\hline
+28& v.good & bad & neutral & bad & v.good &            &      \correct       &           \\\hline
+29& v.bad & v.good & neutral & v.good & bad &            &            &       \correct     \\\hline
+30& v.bad & v.good & neutral & bad & v.good &            &            &       \correct     \\\hline
+31& v.bad & bad & v.good & v.good & bad &            &            &        \correct    \\\hline
+32& v.bad & bad & neutral & v.good & v.good &            &            &      \correct      \\\hline
+33& v.good & v.good & v.bad & v.good & v.good &          &           \correct    &           \\\hline
+34& v.good & v.good & v.good & v.good & v.bad &     \correct          &            &          \\\hline
+35& bad & v.bad & good & v.bad & neutral &            &     \correct          &           \\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Determining the complexity of the second model}
+
+We combine the initial set of $25$ profiles with the new set of $10$ and test whether an MR-Sort model with vetoes is still able to capture them. The result is that this model also appears not to fit completely the assignments of the CM. Nevertheless, we check whether the CM had any hesitations in his assignments which would allow for such a model to be used. Five sets of two profiles, along with their alternative class assignments, are generated as a result (Table~\ref{tab:ex1-step4}).
+
+\begin{table}
+\caption{4}\label{tab:ex1-step4}
+\small
+
+\begin{tabular}{ccccccc|cc}
+&Profile& \multicolumn{5}{c}{Criteria} & \multicolumn{2}{|c}{Category} \\
+&number& $c_1$ & $c_2$ & $c_3$ & $c_4$ & $c_5$ & \multicolumn{1}{c}{original} & \multicolumn{1}{c}{alternative} \\\hline
+\multirow{2}{*}{First set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral &  Neutral & Bad \\
+&        16 &        bad &     v.good &       good &     v.good &      v.bad  &  Bad & Neutral \\\hline
+        
+\multirow{2}{*}{Second set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral  &  Neutral & Bad \\
+&        33 &     v.good &     v.good &      v.bad &     v.good &     v.good  &  Neutral & Bad \\\hline
+         
+\multirow{2}{*}{Third set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral  &  Neutral & Bad \\
+&        34 &     v.good &     v.good &     v.good &     v.good &      v.bad  &  Good & Bad \\\hline
+         
+\multirow{2}{*}{Fourth set}&         2 &        bad &     v.good &    neutral &      v.bad &    neutral  &  Neutral & Bad \\
+&                 35 &        bad &      v.bad &       good &      v.bad  & neutral  &  Neutral & Bad \\\hline
+                 
+\multirow{2}{*}{Fifth set}&        30 &      v.bad &     v.good &    neutral &        bad &     v.good  &  Bad & Neutral \\
+&        33 &     v.good &     v.good &      v.bad &     v.good &     v.good  &  Neutral & Bad \\\hline
+\end{tabular}
+\end{table}
+
+We observe that the first four sets contain the second contributor profile, which the CM already agreed to change if needed. Therefore, we continue by iteratively determining whether he would also agree to accept an alternative assignment for the remaining profiles in these sets. The CM does not accept to change the assignment of profiles $16$, $33$ or $34$, especially since for the third one the alternative assignment strongly contradicts the initial assignment. Nevertheless, he does agree to switch the assignment of profile $35$ to the Bad category, hence we continue to use an MR-Sort model with vetoes. This model is depicted in Fig.~\ref{fig:ex1-model2}.
+
+\input{input/ex1-model2.tex}
+
+We have finished another iteration of the preference modeling process and check whether we should finish the process or start a new iteration. Looking at the number of remaining profiles that may be generated around the categories limits, which are only $8$ in total, the CM agrees to continue the process.
+
+\subsection{Generating and evaluating a second complementary set of profiles}
+
+We generate these $8$ new profiles, and ask the CM to assign them to one of the three categories. The results of this assignment are presented in Table~\ref{tab:ex-step5}.
+
+\begin{table}
+\caption{5}\label{tab:ex1-step5}
+\small
+
+\centering
+
+\begin{tabular}{cccccc|c|c|c}
+Profile& \multicolumn{5}{c}{Criteria} & \multicolumn{3}{c}{Category}\\
+number& $c_1$ & $c_2$ & $c_3$ & $c_4$ & $c_5$ & \multicolumn{1}{c}{Good} & \multicolumn{1}{c}{Neutral} & \multicolumn{1}{c}{Bad}\\\hline
+36 & bad & v.good & neutral & v.good & good &  &  & \correct  \\\hline
+37 & neutral & bad & good & v.bad & v.good &  & \correct &   \\\hline
+38 & neutral & v.bad & v.bad & bad & v.good &  &  &  \correct \\\hline
+39 & v.bad & v.bad & good & bad & v.good &  & \correct &   \\\hline
+40 & v.good & v.bad & v.good & v.good & v.good & \correct &  &   \\\hline
+41 & neutral & v.bad & good & v.bad & v.bad &  &  & \correct  \\\hline
+42 & neutral & bad & good & bad & v.bad &  &  &  \correct \\\hline
+43 & bad & v.good & neutral & v.bad & v.good &  &  & \correct  \\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Determining the complexity of the third model}
+
+After adding the $8$ new profiles and their assignments to the existing ones, we find that an MR-Sort model with vetoes is again not able to represent all of these assignments. Still, we find that changing the assignment of only one profile at a time is enough in order to use such a model. Three profiles are proposed, as seen in Table~\ref{tab:ex1-step6}.
+
+\begin{table}
+\caption{6}\label{tab:ex1-step6}
+\small
+
+\begin{tabular}{ccccccc|cc}
+&Profile& \multicolumn{5}{c}{Criteria} & \multicolumn{2}{|c}{Category} \\
+&number& $c_1$ & $c_2$ & $c_3$ & $c_4$ & $c_5$ & \multicolumn{1}{c}{original} & \multicolumn{1}{c}{alternative} \\\hline
+\multirow{1}{*}{First set}&         14 &     v.good &    neutral &      v.bad &        bad &       good &  Bad & Neutral \\\hline
+        
+\multirow{1}{*}{Second set}&        33 &     v.good &     v.good &      v.bad &     v.good &     v.good &  Neutral & Bad \\\hline
+         
+\multirow{1}{*}{Third set}&         34 &     v.good &     v.good &     v.good &     v.good & v.bad & Good & Bad \\\hline
+\end{tabular}
+\end{table}
+
+We observe that profiles $33$ and $34$ appear again, however, as the CM has already expressed a preference in keeping the original assignments, we only inquire on the possibility of changing the assignment of profile $14$. The CM feels strongly about keeping this profile in the Bad category, therefore motivating us to test a more complex model. We apply an MR-Sort model with vetoes weakened by dictators, as it is the model that is closest to the one previously used. This model, illustrated in Fig.~\ref{fig:ex1-model3} is able to reflect all of the assignments of the CM.
+
+\input{input/ex1-model3.tex}
+
+We have finished yet another iteration of the preference modeling process and check whether we should finish the process or start a new iteration. There are still $14$ profiles that may be generated around the categories limits, however the CM wishes to review the model we have generated so far.
+
+\subsection{Validating the final model}
+
+In order to validate the model with the CM, we present a series of rules that may be derived from the model illustrated in Fig.~\ref{fig:ex1-model3}. These rules are displayed visually through a series of graphs which depict all the combinations of evaluations that a good, respectively neutral and bad, contributor may have. In order to minimize the number of such rules for each category, we additionally allow for some overlap between them to occur. We illustrate these graphs in Fig.~\ref{fig:ex1-rules}.
+
+\input{input/ex1-rules.tex}

@@ -1,0 +1,40 @@
+\renewcommand{\thesubsection}{\Alph{subsection}} %% Appendices get letters
+\subsection{Mathematical Description of MR-Sort}\label{app:mrsort}
+
+Let $A$ denote the finite set of decision alternatives (or members) and $J$ be a finite set of criteria indexes. The output 
+evaluation scale contains $k$ qualitative levels, which means that the  alternatives are to be sorted into $k$ categories ($c_1$, \ldots, $c_k$), ordered by their desirability, from $c_1$ being the worst category to $c_k$ being the best one. Each category $c_h$ is defined by the performance of its lower frontier, or category limit, $b_{h-1}$ and its upper 
+frontier $b_h$ of $B = \{b_0, \ldots b_{k}\}$. Each alternative $a\in A$, or category limit $b_h\in B$ is evaluated on any criterion through a function $g_j$, where $g_j(a)$ ($j\in J$) denotes the performance of the alternative $a$ on criterion $g_j$. 
+
+%The performances of the $b_0$ category limit will be fixed to the worst possible evaluations on all criteria, so that any alternative may be assigned at least to category $c_1$, while the performances of the $b_k$ category limit will be fixed so that they are better than the best possible evaluations on all criteria, hence any alternative will be assigned at most to category $c_k$. We assume, without loss of generality, that the performances are supposed to be such that a higher value denotes a better performance. Furthermore, the performances on the frontiers are non-decreasing, i.e. $\forall j \in J, h \in 1..k: g_j(b_{h-1}) \leqslant g_j(b_h)$.
+
+An alternative $a$ is assigned to the highest possible category $c_h$ such that $a$ outranks the category's lower frontier $b_{h-1}$. In the MR-Sort model, an alternative $a$ is said to outrank a frontier $b_{h-1}$ if and only if there is a sufficient coalition of criteria supporting the assertion ``$a$ is at least as good as $b_{h-1}$''. More precisely, 
+binary relations $C_j$ are first defined to assess whether each criterion $g_j$ supports this statement:
+\begin{equation}
+	\forall j \in J, a \in A, h\in 1..k+1: C_j(a, b_{h-1}) =
+\left\{\begin{array}{l}
+ 1 \mbox{, if } g_j(a) \geqslant g_j(b_{h-1}),\\
+ 0 \mbox{, otherwise.}
+\end{array}\right.
+\end{equation}
+The coalition of criteria in favor of the outranking, $\forall a \in A, h\in 1..k+1$, which we denote with $C(a, b_{h-1})$, is then defined as:
+\begin{equation}
+	C(a, b_{h-1}) = \sum_{j \in J} w_j C_j(a, b_{h-1}),
+\end{equation}
+where $w_j$ is the weight of the criterion $g_j$. 
+%, and $C_j(a, b_{h-1}) \in \{0, 1\}$ measures if $a$ is at least as good as $b_{h-1}$ from the point of view of the criterion $j$ or not: $C_j(a, b_{h-1}) = 1 \Leftrightarrow g_j(a) \geq g_j(b_{h-1})$, 0 otherwise. 
+The weights are defined so that they are positive ($w_j \geqslant 0, \forall j\in J$) and sum up to one ($\sum_{j \in J} w_j = 1$). The coalition of criteria is compared to a majority threshold $l \in [0.5,1]$ extracted from the DM's preferences along with the weights. If $C(a, b_{h-1})<l$, the coalition is not sufficient and the alternative does not outrank the frontier $b_{h-1}$ and will therefore be assigned in a category below $c_h$.
+
+\subsection{Initial Interview with DMs}\label{app:interview}
+
+\begin{tabular}{p{3cm}p{12cm}}
+Interviewer: 	&	Thank you for talking to me. This call is being recorded. Is that all right with you?\\
+Interviewer:	&	I wanted to talk to you specifically about the [name] community, of which you are a community manager.\\
+Interviewer:	&	The purpose this research is to try to identify the technical and behavioral attributes of a good contributor. Could you start by telling me some aspects or attributes of what makes for a good code contributor in this community?\\
+Interviewer:	&	Can you state any of the attributes or characteristics that you consider to be bad in a contributor, that you would specifically not like to see?\\
+Interviewer:	&	I am now giving you a list of potential attributes of contributors. Could you please indicate how important you find these attributes, and talk me through your thoughts as you do so?
+[Provide questionnaire]\\
+
+Interviewer:	&	Thank you. The follow-up question is: after reading this list, do you have any additional thoughts on what makes a good contributor or a bad contributor?\\
+Interviewer:	&	Thank you for your time.\\
+\end{tabular}
+

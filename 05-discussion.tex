@@ -1,0 +1,71 @@
+\subsection{Evaluating team members\ldots and DMs}
+
+In addition to the two DMs whose preferences were described in detail, %Section~\ref{sec:results:sub:model}
+four other DMs participated. Table~\ref{tab:criteria} shows the criteria each selected as `important' or `very important' according to the second step of the methodology. % Section~\ref{sec:results:sub:subset}.
+
+\begin{table}[h]
+\centering
+\caption{Important Criteria for DMs}\label{tab:criteria}
+\begin{tabular}{c|c|c|c|c|c|c}
+\multirow{2}{*}{Criteria} & \multicolumn{6}{c}{Decision makers}\\
+& \GJ & \DB & \RH & \LD & \RQ & \XA\\\hline
+Communication skills & & & \correct & & \correct & \correct \\
+Commitment to the project &  \correct& \correct & \correct & \correct & \correct & \correct \\
+Working with others & \correct & \correct & \correct & \correct & \correct & \correct \\
+Pressure and stress related managing capacity & & & & \correct & \correct & \correct \\
+Creativity & & & & & & \correct \\
+Quantity of code produced & & & & \correct & & \\
+Quality of code produced & \correct & \correct & \correct & & \correct & \correct \\
+Global picture & \correct & \correct & \correct & \correct & \correct & \correct \\
+Documentation and testing & \correct & \correct & \correct & \correct & \correct & \correct\\
+Contributions on other aspects & & & \correct & \correct & & \\
+\end{tabular}
+\end{table}
+
+Each of the dimensions were considered useful by at least one DM, while no DM considered all criteria necessary. We observe that the dimensions related to the commitment of contributors, their capacity to work together, their perspective of the project as a whole and their ability to document their work were unanimously considered important factors by all DMs. Furthermore, most were also concerned with the quality of code produced.
+
+This result supports the premise of the article: if a set of variables can describe what is observable and important for evaluating a virtual team member, managers will only use a subset of these variables, and do not agree on what this subset is. Even when they agree on the subset of dimensions, the relative importance of the factors and the interactions between them will be adjudged differently, as shown in our experiment, illustrated with Figures~\ref{fig:ex1-rules-reduced} and \ref{fig:ex2-rules-reduced1}. While the protocol in both cases led to an MR-Sort with vetoes weakened by dictators, the resulting models and assignment rules were quite different.
+
+\GJ placed a more or less equal emphasis on all five variables, requiring that a virtual team member be at least good on four out of five variables in order to fit in the Neutral or Good categories, veto and dictator effects notwithstanding. The ability to work with others was given slightly less weight than the other variables. For the first, third and fifth variables, the division revolved around a neutral evaluation, however only very bad performance on the remaining two variables was considered characteristic of a bad contributor. Several vetoes emerged, showing that a good contributor could not be very bad on any of the variables except the  global perspective on the project. However, even in this case, a very good global perspective could negate these very bad attributes. Finally, very bad code quality or documentation skills were enough to mark the contributor as Bad, provided a good global perspective was lacking.
+
+%%% Added after MISQ submission
+When we compare the model which emerged, shown in Figure~\ref{fig:ex1-model3}, to a model which might have been built based on his statements and his initial selection in the questionnaire, the MCDA technique has elicited a more detailed picture. Initially, \GJ put $c_1$, commitment to the project, as very important and other factors as important. but in the model we developed, which was validated by \GJ, $c_1$ is as important as $c_4$ and $c_5$, and slightly less important than $c_3$. This demonstrates that considering each factor in isolation can yield different results compared to when the DM is forced to take multiple important factors into consideration at once. As such, MCDA offers a solution to untangling priority when faced with multiple important criteria.
+%%% end added after submission
+
+\DB, on the other hand, had a very different perspective on contributor qualities, despite using the same five variables in his assessment. 
+%%% Added after MISQ submission
+Figure~\ref{fig:ex2-model4} shows \DB's final elicited model. 
+%%% end added after submission
+A large emphasis was placed on the first variable, commitment to the project, which could be paired with any of the remaining variables in order to form a majority coalition, leading to a contributor with performances at least as good as the category profile on these coalitions could be placed in either the Neutral or the Good category, ignoring for a moment the veto and dictator constructs. \DB's profiles on the first and last variables were identical to those of \GJ, but the levels of the remaining ones were different. In contrast to \GJ, \DB was less demanding on the second criterion and more critical on the third and fourth. With respect to the vetoes, \DB was less tolerant of bad performance on commitment and code quality, but readily tolerated very bad performance on the global perspective and documentation skills. Nevertheless, good performances on the first two and last variables served to negate any vetoes, whereas only good levels on project commitment and very good ones on working with others had the same effect of elevating profiles to Good.
+
+%%% Added after MISQ submission
+In his initial interview, \DB rated commitment to the project ($c_1$), ability to work with others ($c_2$), quality of code ($c_3$) and documentation and testing ($c_5$) and very important, and understanding of the tools, technologies, domain and process behind the project ($c_4$) as important. The eventual model showed that commitment to the project was in fact the single most important factor, contributing 40\% of the of the weight. The global picture was indeed a less important factor, but so was documentation. It is clear that a 5-item scale as in the questionnaire is insufficient to elicit the same level of detail, such as the extreme importance of $c_1$ relative to the other dimensions. The interview did provide additional information, as \DB stated emphatically that commitment to the project was the single most important factor, but from this alone we could not have inferred such a detailed model as the one which which eventually emerged.
+%%% end added after submission
+
+\subsection{Managerial and Theoretical implications}
+\label{subsec:managerialimplic}
+
+These results for our managerial preferences elicitation method regarding virtual team members leads to several implications. As initially stated, our goal was not to exhaustively identify all potential classes of managers based on their preferences, not even within the scope of FLOSS communities.
+
+%%%% changes here %%%%
+This work, however, provides several contributions to the IS literature and to the virtual team managers.
+
+First it appears to indicate that even in the case of virtual teams, where a portion of the behaviors is unobservable, the DM can agree on the fact that a subset of elements, derived from the literature, is both observable and can be used to evaluate their team members. Of course this result is based on observations of only six DMs, and should be expanded through additional research.
+Our work helps to go beyond the paradox raised by \cite{KayworthLeidner02} about both the non-statistical link between team manager characteristics and team performance, but also team leader importance in trust-building by exposing that there is no direct link, because managers are different and have different expectations.
+%%%%%% end of modification
+
+From a theoretical point of view, this may open a new area of research into the collection of data on a manager's expectations regarding team members in particular, and principal-agent modeling in general, especially from an IS point of view. Instead of trying to identify a good agent for the majority of managers through statistical inference, we propose to construct an individual preference model for every manager. As we have shown in our experiments, the managers may not agree on the same set of dimensions with which to evaluate their team members, and even when they do, the resulting preference models can be quite different.
+We are confident that this approach would result in solid and actionable results regarding efficient teaming questions.
+
+Regarding the application of the method to the IS field, the importance of trust-building and the role of the manager in doing so \citep{KayworthLeidner02}, through integrity and benevolence \citep{JarvenpaaKnollLeidner98}, has been identified. Therefore the first contact between the manager and the team, and the manager's communication of expectations are of utmost importance. This is where our work may provide solutions to practitioners. We have proposed a method and showed that this allows managers to better define what their evaluation criteria are. This model does not identify a single acceptable profile, but allows for team members to have different strengths and weaknesses, yet understand the relative importance of different attributes. Because the results are presented in a structured way, ambiguity is reduced and transparency is increased. This method can help not only in the team building phase, but also in subsequent coaching and in explaining the team manager's expectations.
+
+To be fully useful, however, the implementation of our methodology requires improvement, both in terms of information system design and implementation and in terms of algorithmic efficiency in the construction of the models. In particular, we relied on repeated interviews with the DMs, and in a large-scale application of the method, interviews may only be warranted in the first iteration, when the manager's understanding of the process may be unclear. Automating the third step for subsequent iterations would greatly reduce the burden on the manager.
+
+\subsection{Methodological implications and evolutions}\label{subsec:Methodofindings}
+
+While the proposed methodology and its application to the context of integrating managerial preferences when evaluating team members served to show the possibilities of modeling the perspective of each DM, there are nevertheless several limitations which can be addressed in future work.
+
+To begin with, we only explored the family of models based on outranking relations, MR-Sort and its extensions, although other families of models could be considered. The motivation behind the use of these models was based on the ordinal scales used to evaluate team members on the different criteria, and the fact that the DM often describes a good team member based on the member's outstanding characteristics rather than the average of all attributes. We have also assumed that the DM has accurate knowledge of the performance of each team member in all dimensions, although quantitative measures linked to each dimensions could be additionally considered, allowing the DM to judge unknown team members, for instance, in the context of a recruitment procedure.
+
+Another limitation relates to the use of exact inference algorithms, which can only be used when the number of assignment examples is small. This prevented us from constructing the preference models of each manager in a single session and instead spread our interactions across a period of multiple weeks. Because of this, we also had to deal with the effects of bounded rationality, where the DM's judgments could become slightly inconsistent, changing perspective on the problem from one session to the next. In order to overcome this by accelerating the whole process, approximative inference methods could be explored.
+

@@ -1,0 +1,268 @@
+\documentclass{misqdoc} % current default for manuscript submission
+\usepackage{pst-all}
+\RequirePackage{natbib}
+\usepackage{booktabs,array}
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{patterns}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{unicode-math}
+\usepackage{xspace}
+
+\usepackage{setspace}   %Allows double spacing with the \doublespacing command
+\setmainfont
+[    Extension = .otf,
+   UprightFont = *-regular,
+      BoldFont = *-bold,
+    ItalicFont = *-italic,
+BoldItalicFont = *-bolditalic,
+]{xits}
+
+\setmathfont
+[    Extension = .otf,
+      BoldFont = *bold,
+]{xits-math}
+
+
+% article written in American English
+
+%% Community managers - can be named, numbered or use initials
+% Times New Roman does not have small capital letters
+\newcommand\GJ{DM1\xspace} %% Garth Johnson
+\newcommand\DB{DM2\xspace} %% David Boswell
+\newcommand\RH{DM3\xspace} %% R\'{e}my Hubscher
+\newcommand\LD{DM4\xspace} %% Lo\"{i}c Dachary
+\newcommand\RQ{DM5\xspace} %% Rodolphe Quiedeville
+\newcommand\XA{DM6\xspace} %% Xavier Antoviaque
+
+%\usepackage[UKenglish]{babel}
+%\DeclareLanguageMapping{english}{british-apa}
+%\DeclareLanguageMapping{UKEnglish}{british-apa}
+
+% Patrick put the following line in comment !! remove comment !! 
+% But: The following line results in a compilation error (Ann):
+%\DoubleSpacedXI % Made default on 4/4/2014 per request
+
+%%\OneAndAHalfSpacedXI % current default line spacing
+%%\OneAndAHalfSpacedXII
+%%\DoubleSpacedXII
+\usepackage{url}
+% If hyperref is used, dvi-to-ps driver of choice must be declared as
+%   an additional option to the \documentclass. For example
+%\documentclass[dvips,orsc]{informs3}      % if dvips is used
+%\documentclass[dvipsone,orsc]{informs3}   % if dvipsone is used, etc.
+
+%%% ORSC uses endnotes!
+\usepackage{endnotes}
+\let\footnote=\endnote
+\let\enotesize=\normalsize
+\def\notesname{Endnotes}%
+\def\enoteformat{\rightskip0pt\leftskip0pt\parindent=0em
+  \leavevmode\hbox{\makeenmark}}
+
+% Private macros here (check that there is no clash with the style)
+
+% Natbib setup for author-year style
+%\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+
+%% Setup of theorem styles. Outcomment only one. 
+%% Preferred default is the first option.
+%\TheoremsNumberedThrough     % Preferred (Theorem 1, Lemma 1, Theorem 2)
+%\TheoremsNumberedByChapter  % (Theorem 1.1, Lema 1.1, Theorem 1.2)
+
+%% Setup of the equation numbering system. Outcomment only one.
+%% Preferred default is the first option.
+%\EquationsNumberedThrough    % Default: (1), (2), ...
+%\EquationsNumberedBySection % (1.1), (1.2), ...
+
+% In the reviewing and copyediting stage enter the manuscript number.
+%\MANUSCRIPTNO{} % When the article is logged in and DOI assigned to it,
+                 %   this manuscript number is no longer necessary
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{pifont}
+\usepackage{rotating, multirow, makecell}
+\usepackage{xcolor}
+\usepackage{tikz}
+\newcommand{\correct}{\ding{51}}
+\newcommand{\incorrect}{\ding{53}}
+\newcommand{\todo}[2] {{\bf \color{red} TODO #1:} {\color{red} #2}}
+
+\newcommand{\rot}[1]{\rotatebox{90}{#1}}
+\newcommand{\multirot}[2]{\multirow{#2}{*}{\rotcell{\rlap{#1}}}}
+\newcommand{\assig}{\ding{51}}
+\pgfplotsset{compat=newest}
+\usepackage{tabu}
+
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%
+
+
+
+% Outcomment only when entries are known. Otherwise leave as is and 
+%   default values will be used.
+%\setcounter{page}{1}
+%\VOLUME{00}%
+%\NO{0}%
+%\MONTH{Xxxxx}% (month or a similar seasonal id)
+%\YEAR{0000}% e.g., 2005
+%\FIRSTPAGE{000}%
+%\LASTPAGE{000}%
+%\SHORTYEAR{00}% shortened year (two-digit)
+%\ISSUE{0000} %
+%\LONGFIRSTPAGE{0001} %
+%\DOI{10.1287/xxxx.0000.0000}%
+
+% Author's names for the running heads
+% Sample depending on the number of authors;
+% \RUNAUTHOR{Jones}
+% \RUNAUTHOR{Jones and Wilson}
+% \RUNAUTHOR{Jones, Miller, and Wilson}
+% \RUNAUTHOR{Jones et al.} % for four or more authors
+% Enter authors following the given pattern:
+
+
+% Title or shortened title suitable for running heads. Sample:
+% \RUNTITLE{Bundling Information Goods of Decreasing Value}
+% Enter the (shortened) title:
+%\RUNTITLE{Integrating managerial preferences into the qualitative evaluation of contributors to virtual teams}
+%\RUNTITLE{Eliciting Managerial Preferences of Teams}
+
+% Full title. Sample:
+
+\title{Integrating managerial preferences into the qualitative evaluation of virtual team members}
+%\TITLE{Qualitative evaluation of contributors to virtual teams of the Managerial Preferences regarding the profile and the potential of contributors to virtual teams}
+% Enter the full title:
+%\TITLE{}
+
+% Block of authors and their affiliations starts here:
+% NOTE: Authors with same affiliation, if the order of authors allows, 
+%   should be entered in ONE field, separated by a comma. 
+%   \EMAIL field can be repeated if more than one author
+
+%\author{Ann Barcomb, LERO, University of Limerick, Nicolas Jullien, IMT Atlantique / Universit\'e Bretagne Loire, LEGO-M@rsouin, Patrick Meyer, Alexandru Olteanu, IMT Atlantique / Universit\'e Bretagne Loire, Lab-STICC - CNRS UMR 6285}
+% \address{1: LERO, University of Limerick, {\tt ann@barcomb.org\\2: IMT Atlantique / Universit\'e Bretagne Loire, {\tt \{nicolas.jullien, patrick.meyer, al.olteanu\}@imt-atlantique.fr}\\3: LEGO-M@rsouin, 4: Lab-STICC - CNRS UMR 6285}
+% \author{Ann Barcomb, Lero, University of Limerick, \url{ann@barcomb.org} \\
+% Nicolas Jullien, IMT Atlantique, LEGO-M@rsouin, Universit\'e Bretagne Loire,  \url{nicolas.jullien@imt-atlantique.fr}\\ 
+% Patrick Meyer, Alexandru-Liviu Olteanu, IMT Atlantique, Lab-STICC, Univ. Bretagne Loire,  \url{{patrick.meyer, al.olteanu}@imt-atlantique.fr}
+%} % end of the block
+\doublespacing
+
+\begin{abstract}
+
+
+% * <nicolas.jullien@telecom-bretagne.eu> 2017-07-17T07:27:20.729Z:
+% Abstract rewritten to make clear that it is a good fit for MISQ
+% ^.
+With the rise of virtual teaming, seen in globally distributed software development teams, and transitive teaming, as found in open and inner source software development, managers can find it challenging to assess team members consistently and fairly. Evaluation is complicated because the ideal composition of qualities possessed by good team members depends on the organization, the team, and the manager.
+To enable managers to elucidate the qualities they require, we propose an innovative methodology based on multi-criteria decision aiding techniques. Using it in the case of free/libre open source software as an example, we were able to elicit the characteristics of a good, acceptable or bad contributor and infer a model based on a manager's evaluation of example contributors. 
+This experiment also demonstrates that while a set of characteristics can be identified for a domain, different managers are concerned with different subsets of the full set. Even when working with the same subset, they come to different conclusions about the relative importance of the attributes. Our main methodological contribution is the development of a three-step methodology for assessing managerial preferences on the attributes of team members, an approach which is transferable to any virtual teaming situation.
+
+
+
+\end{abstract}
+% Fill in data. If unknown, outcomment the field
+\textbf{Keywords:} virtual team, manager, eliciting profile, multi-criteria decision aiding, FLOSS
+
+% End the cover page
+\clearpage
+
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Samples of sectioning (and labeling) in ORSC
+% NOTE: (1) \section and \subsection do NOT end with a period
+%       (2) \subsubsection and lower need end punctuation
+%       (3) capitalization is as shown (title style).
+%
+%\section{Introduction.}\label{intro} %%1.
+%\subsection{Duality and the Classical EOQ Problem.}\label{class-EOQ} %% 1.1.
+%\subsection{Outline.}\label{outline1} %% 1.2.
+%\subsubsection{Cyclic Schedules for the General Deterministic SMDP.}
+%  \label{cyclic-schedules} %% 1.2.1
+%\section{Problem Description.}\label{problemdescription} %% 2.
+
+% Text of your paper here
+
+\section{Introduction}\label{sec:introduction}
+\input{01-introduction.tex}
+
+\section{Related Work}\label{sec:related}
+\input{02-related.tex}
+
+\section{A Method to integrate managerial preferences into the ordinal evaluation of contributors}\label{sec:methodology}
+\input{03-methodology.tex}
+
+\section{Experimental illustration: FLOSS}\label{sec:results}
+\input{04-experiment.tex}
+
+\section{Discussion}\label{sec:discussion}
+\input{05-discussion.tex}
+
+\section{Conclusion}\label{sec:conclusion}
+\input{06-conclusion.tex}
+
+
+% Acknowledgments here
+\section*{ACKNOWLEDGMENT}%
+% This work was supported, in part, by Science Foundation Ireland grants 10/CE/I1855 and 13/RC/2094  to Lero - the Irish Software Research Centre (\url{www.lero.ie}).
+
+% We would like to thank the six FLOSS community managers who participated in this research and Pr. Mathieu Simonnet, who provided input on the modeling of psychological traits. We would also like to thank Dr. Brian Fitzgerald, Dr. Brian Butler, and our anonymous reviewers, who provided valuable feedback which made the paper stronger.
+
+
+% Enter the text of acknowledgments here
+% Leave this (end of acknowledgment)
+
+
+% Appendix here
+% Options are (1) APPENDIX (with or without general title) or 
+%             (2) APPENDICES (if it has more than one unrelated sections)
+% Outcomment the appropriate case if necessary
+%
+\section*{APPENDIX}\label{sec:appendix}
+\input{07-appendix.tex}
+
+%
+%   or 
+%
+%\begin{APPENDICES}
+%\end{APPENDICES}
+
+%\bigskip
+
+% Endnotes here
+\theendnotes
+
+%\bigskip
+
+% References here (outcomment the appropriate case) 
+
+% CASE 1: BiBTeX used to constantly update the references 
+%   (while the paper is being written).
+\bibliographystyle{misq} % outcomment this and next line in Case 1
+\bibliography{floss.bib,software.bib,volunteering.bib,research_methods.bib,thispaper.bib}
+
+% CASE 2: BiBTeX used to generate mypaper.bbl (to be further fine tuned)
+%\input{mypaper.bbl} % outcomment this line in Case 2
+%% NB 2017.06.09: the following references require manual modifications due to a lack of editor, resulting in a double comma before the publisher name:
+%% Beecham (2014 & 2015)
+%% Carillo
+%% Deshpande
+%% Keertipata
+%% Noll
+%% Poo-Caamano
+%% Roman-Gonzalez
+%% Tsay
+%% Zhou
+
+\end{document}
+
