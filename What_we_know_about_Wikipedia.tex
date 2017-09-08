@@ -1,4 +1,5 @@
-\documentclass{misqdoc}
+\documentclass{informs3}
+
 \usepackage{pst-all}
 \usepackage{xspace}
 %\usepackage[T1]{fontenc}
@@ -10,7 +11,6 @@
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{setspace}
-\usepackage{pst-all}
 \RequirePackage{natbib}
  \bibpunct[, ]{(}{)}{,}{a}{}{,}%
  \def\bibfont{\small}%
@@ -18,7 +18,7 @@
  \def\bibhang{24pt}%
  \def\newblock{\ }%
  \def\BIBand{and}%
-\doublespacing
+%\doublespacing
 
 \makeatletter
 
@@ -34,22 +34,23 @@
 %%%%%%%%%%%%%%%%
 
 
-
-
-\title{What we know about Wikipedia. A review of the literature analyzing
+\RUNTITLE{Wikipedia Literature Review}
+\TITLE{What we know about Wikipedia. A review of the literature analyzing
 the project(s).}
 
-%} % end of the block
-\doublespacing
-\author{Nicolas Jullien\thanks{LUSSI, IMT Atlantique \& LEGO-M@rsouin. Nicolas.Jullien@imt-atlantique.eu}}
+\ARTICLEAUTHORS{%
+	% Enter all authors
+    \AUTHOR{Nicolas Jullien}
+	\AFF{IMT Atlantique-UBL, LEGO-M@rsouin, \EMAIL{Nicolas.Jullien@imt-atlantique.fr}
+} 
+}
 \maketitle
-\begin{abstract}
+\ABSTRACT{
 This article proposes a review of the literature analyzing Wikipedia
 as a collective system for producing knowledge. It is not a review of all the articles written on Wikipedia, but, more modestly, a review of the existing literature on how Wikipedia
 works, based on the framework proposed by Elionor Ostrom and Charlotte Hess to analyze the knowledge commons.
 It is and opensource, collaborative works, protected by the license presented in the license.txt file.
-
-\end{abstract}
+}
 
 
 % Text of your paper here
@@ -133,7 +134,7 @@ It is and opensource, collaborative works, protected by the license presented in
 % Acknowledgments here
 \section*{ACKNOWLEDGMENT}%
 
-\bibliographystyle{misq}
+\bibliographystyle{inform}
 \bibliography{2012andbefore.bib,2013.bib,2014.bib}
 \end{document}
 
