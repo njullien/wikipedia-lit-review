@@ -1,0 +1,37 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {chapter}{\numberline {2}Structure of the Analysis and of the Document}{5}
+\contentsline {section}{\numberline {2.1}Aim and Organization of the Document.}{5}
+\contentsline {subsection}{\numberline {2.1.1}Research questions.}{5}
+\contentsline {subsection}{\numberline {2.1.2}A framework to analyze the project.}{6}
+\contentsline {subsection}{\numberline {2.1.3}The scientific production on Wikipedia.}{6}
+\contentsline {chapter}{\numberline {3}Inputs}{11}
+\contentsline {section}{\numberline {3.1}Environment, Rules in Use}{11}
+\contentsline {section}{\numberline {3.2}Why do they participate?}{14}
+\contentsline {chapter}{\numberline {4}The process(es), or the patterns of interaction.}{17}
+\contentsline {section}{\numberline {4.1}The contributors, their activity and roles (what they do).}{17}
+\contentsline {section}{\numberline {4.2}Pieces of knowledge, articles, and global structure.}{21}
+\contentsline {subsection}{\numberline {4.2.1}Structure of the project.}{21}
+\contentsline {subsection}{\numberline {4.2.2}Structure of articles edition.}{22}
+\contentsline {section}{\numberline {4.3}The organization, structure, and governance of the project.}{24}
+\contentsline {subsection}{\numberline {4.3.1}People, team and articles.}{25}
+\contentsline {paragraph}{People and articles.}{25}
+\contentsline {paragraph}{Form of the team.}{25}
+\contentsline {paragraph}{Conclusion.}{26}
+\contentsline {subsection}{\numberline {4.3.2}The life of an article: creation and deletion, redaction, and promotion.}{27}
+\contentsline {paragraph}{The decisions regarding an article.}{27}
+\contentsline {paragraph}{Conflict during the reaction of the articles.}{27}
+\contentsline {subsection}{\numberline {4.3.3}Management and leadership.}{29}
+\contentsline {subsection}{\numberline {4.3.4}Organization, process, a conclusion.}{30}
+\contentsline {chapter}{\numberline {5}Evaluation, points of view.}{32}
+\contentsline {section}{\numberline {5.1}Process Quality and Efficiency.}{32}
+\contentsline {section}{\numberline {5.2}Users' experience.}{33}
+\contentsline {subsection}{\numberline {5.2.1}Developers' experience.}{33}
+\contentsline {subsection}{\numberline {5.2.2}Readers' experience.}{34}
+\contentsline {paragraph}{System use.}{34}
+\contentsline {paragraph}{Accessibility.}{35}
+\contentsline {section}{\numberline {5.3}Product quality.}{35}
+\contentsline {subsection}{\numberline {5.3.1}Global coverage.}{35}
+\contentsline {subsection}{\numberline {5.3.2}Articles quality.}{36}
+\contentsline {paragraph}{Random analysis.}{36}
+\contentsline {paragraph}{Analyses by topic.}{38}
+\contentsline {subsection}{\numberline {5.3.3}Conclusion.}{38}

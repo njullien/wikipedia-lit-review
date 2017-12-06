@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: What_we_know_about_Wikipedia.aux
+The style file: inform.bst
+Reallocated field_info (elt_size=4) to 13708 items from 5000.
+Database file #1: 2012andbefore.bib.bib
+Database file #2: 2013.bib.bib
+Database file #3: 2014.bib.bib
+Warning--missing institution in Rogersetal08
+Warning--missing publisher in Geiger11
+Warning--missing publisher in OstromHess06
+Warning--missing publisher in HessOstrom06b
+Warning--missing publisher in LakhaniWolf05
+Warning--missing institution in Okolietal12
+You've used 311 entries,
+            2869 wiz_defined-function locations,
+            2531 strings with 62778 characters,
+and the built_in function-call counts, 290670 in all, are:
+= -- 29198
+> -- 6815
+< -- 202
++ -- 2629
+- -- 2230
+* -- 20394
+:= -- 35897
+add.period$ -- 599
+call.type$ -- 311
+change.case$ -- 2282
+chr.to.int$ -- 312
+cite$ -- 317
+duplicate$ -- 29181
+empty$ -- 23655
+format.name$ -- 3163
+if$ -- 60835
+int.to.chr$ -- 12
+int.to.str$ -- 1
+missing$ -- 3250
+newline$ -- 939
+num.names$ -- 1262
+pop$ -- 14026
+preamble$ -- 1
+purify$ -- 1984
+quote$ -- 0
+skip$ -- 6179
+stack$ -- 0
+substring$ -- 28936
+swap$ -- 7716
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2730
+warning$ -- 6
+while$ -- 2075
+width$ -- 0
+write$ -- 3527
+(There were 6 warnings)
