@@ -1,0 +1,141 @@
+\documentclass{informs3}
+
+\usepackage{pst-all}
+\usepackage{xspace}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose}
+\usepackage{array}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{setspace}
+\RequirePackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+%\doublespacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%
+
+
+\RUNTITLE{Wikipedia Literature Review}
+\TITLE{What we know about Wikipedia. A review of the literature analyzing
+the project(s).}
+
+\ARTICLEAUTHORS{%
+	% Enter all authors
+    \AUTHOR{Nicolas Jullien}
+	\AFF{IMT Atlantique-UBL, LEGO-M@rsouin, \EMAIL{Nicolas.Jullien@imt-atlantique.fr}
+} 
+}
+\maketitle
+\ABSTRACT{
+This article proposes a review of the literature analyzing Wikipedia
+as a collective system for producing knowledge. It is not a review of all the articles written on Wikipedia, but, more modestly, a review of the existing literature on how Wikipedia
+works, based on the framework proposed by Elionor Ostrom and Charlotte Hess to analyze the knowledge commons.
+It is and opensource, collaborative works, protected by the license presented in the license.txt file.
+}
+
+
+% Text of your paper here
+
+\section{Introduction}\label{sec:introduction}
+\input{01-introduction.tex}
+
+\section{Structure of the Analysis and of the Document}\label{sec:related}
+\input{02-aimorganizationdoc.tex}
+
+\section{Inputs}\label{sec:Inputs}
+\input{03-input.tex}
+\subsection{Environment, Rules in Use}\label{subsec:EnvironmentRules}
+\input{03.1-environment-rules.tex}
+\subsection{Why do they participate?}\label{subsec:Why-do-they-participate}
+\input{03.2-participation.tex}
+
+\section{The process(es), or the patterns of interaction.}\label{sec:Process,-or-the}
+\input{04-process.tex}
+
+\section{Conclusion}\label{sec:conclusion}
+\input{06-conclusion.tex}
+\subsection{The contributors, their activity and roles (what they do).}\label{subsec:The-contributors,-activity}
+\input{041-contributorsactivity.tex}
+
+\subsection{Pieces of knowledge, articles, and global structure.}\label{subsec:The-pieces-of-knowledge}
+\input{042-piecesofknowledge.tex}
+
+\subsubsection{Structure of the project.}
+\input{0421-structureproject.tex}
+\subsubsection{Structure of articles edition.}
+\input{0422-structurearticle.tex}
+
+\subsection{The organization, structure, and governance of the project.}
+\input{043-organizationgovernance.tex}
+
+\subsubsection{People, team and articles.}
+\input{0431-peopleteamarticles.tex}
+\subsubsection{The life of an article: creation and deletion, redaction, and promotion.}
+\input{0432-lifeofanarticle.tex}
+
+\subsubsection{Management and leadership.}
+\input{0433-managementleadership.tex}
+
+\subsubsection{Organization, process, a conclusion.}
+\input{0434-organizationprocessconclusion.tex}
+
+
+\section{Evaluation, points of view.}
+\label{sec:Evaluation}
+\input{05-evaluation.tex}
+
+\subsection{Process Quality and Efficiency.}
+\label{subsec:processquality}
+\input{051-processquality.tex}
+
+\subsection{Users' experience.}
+\label{subsec:usersexperience}
+\input{052-usersexperience.tex}
+
+\subsubsection{Developers' experience.}
+\input{0521-developerssexperience.tex}
+
+\subsubsection{Readers' experience.}
+\input{0522-readerssexperience.tex}
+
+\subsection{Product quality.}
+\label{subsec:productquality}
+\input{053-productquality.tex}
+
+\subsubsection{Global coverage.}
+\input{0531-globalcoverage.tex}
+
+\subsubsection{Articles quality.}
+\input{0532-articlesquality.tex}
+
+\subsubsection{Conclusion.}
+\input{054-conclusionquality.tex}
+
+
+% Acknowledgments here
+\section*{ACKNOWLEDGMENT}%
+
+\bibliographystyle{inform}
+\bibliography{2012andbefore.bib,2013.bib,2014.bib}
+\end{document}
+
+
