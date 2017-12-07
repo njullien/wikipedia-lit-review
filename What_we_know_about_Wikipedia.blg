@@ -4,9 +4,113 @@ The top-level auxiliary file: What_we_know_about_Wikipedia.aux
 The style file: inform.bst
 Reallocated field_info (elt_size=4) to 13708 items from 5000.
 Database file #1: 2012andbefore.bib.bib
+Warning--string name "how" is undefined
+--line 2 of file 2012andbefore.bib.bib
+Missing "}" in preamble command---line 2 of file 2012andbefore.bib.bib
+ : how 
+ :     to document a reference
+I'm skipping whatever remains of this command
+I was expecting an "="---line 13 of file 2012andbefore.bib.bib
+ : etc. 
+ :      }
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 18 of file 2012andbefore.bib.bib
+ :   etc. 
+ :        }
+I'm skipping whatever remains of this entry
+Repeated entry---line 615 of file 2012andbefore.bib.bib
+ : @article{BarabasiAlbert99
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3598 of file 2012andbefore.bib.bib
+ : @article{Francoetal95
+ :                      ,
+I'm skipping whatever remains of this entry
 Database file #2: 2013.bib.bib
+You're missing a field part---line 4 of file 2013.bib.bib
+ : @preamble{
+ :           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I'm skipping whatever remains of this command
+Repeated entry---line 14 of file 2013.bib.bib
+ : %%%%    @article{BarabasiAlbert99
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19 of file 2013.bib.bib
+ : %%%%% @article{Francoetal95
+ :                            ,
+I'm skipping whatever remains of this entry
 Database file #3: 2014.bib.bib
+You're missing a field part---line 4 of file 2014.bib.bib
+ : @preamble{
+ :           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I'm skipping whatever remains of this command
+Repeated entry---line 14 of file 2014.bib.bib
+ : %%%%    @article{BarabasiAlbert99
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19 of file 2014.bib.bib
+ : %%%%% @article{Francoetal95
+ :                            ,
+I'm skipping whatever remains of this entry
+Database file #4: 2015.bib.bib
+You're missing a field part---line 4 of file 2015.bib.bib
+ : @preamble{
+ :           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I'm skipping whatever remains of this command
+Repeated entry---line 14 of file 2015.bib.bib
+ : %%%%    @article{BarabasiAlbert99
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19 of file 2015.bib.bib
+ : %%%%% @article{Francoetal95
+ :                            ,
+I'm skipping whatever remains of this entry
+Database file #5: 2016.bib.bib
+You're missing a field part---line 4 of file 2016.bib.bib
+ : @preamble{
+ :           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I'm skipping whatever remains of this command
+Repeated entry---line 14 of file 2016.bib.bib
+ : %%%%    @article{BarabasiAlbert99
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19 of file 2016.bib.bib
+ : %%%%% @article{Francoetal95
+ :                            ,
+I'm skipping whatever remains of this entry
+Database file #6: 2017.bib.bib
+You're missing a field part---line 4 of file 2017.bib.bib
+ : @preamble{
+ :           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I'm skipping whatever remains of this command
+Repeated entry---line 14 of file 2017.bib.bib
+ : %%%%    @article{BarabasiAlbert99
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19 of file 2017.bib.bib
+ : %%%%% @article{Francoetal95
+ :                            ,
+I'm skipping whatever remains of this entry
+Database file #7: 2018.bib.bib
+You're missing a field part---line 4 of file 2018.bib.bib
+ : @preamble{
+ :           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+I'm skipping whatever remains of this command
+Repeated entry---line 14 of file 2018.bib.bib
+ : %%%%    @article{BarabasiAlbert99
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 19 of file 2018.bib.bib
+ : %%%%% @article{Francoetal95
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--empty year in BarabasiAlbert99; set to ????
+Warning--empty title in BarabasiAlbert99
+Warning--empty journal in BarabasiAlbert99
 Warning--missing institution in Rogersetal08
+Warning--empty year in Francoetal95; set to ????
+Warning--empty title in Francoetal95
+Warning--empty journal in Francoetal95
 Warning--missing publisher in Geiger11
 Warning--missing publisher in OstromHess06
 Warning--missing publisher in HessOstrom06b
@@ -14,43 +118,43 @@ Warning--missing publisher in LakhaniWolf05
 Warning--missing institution in Okolietal12
 You've used 311 entries,
             2869 wiz_defined-function locations,
-            2531 strings with 62778 characters,
-and the built_in function-call counts, 290670 in all, are:
-= -- 29198
+            2525 strings with 62630 characters,
+and the built_in function-call counts, 290406 in all, are:
+= -- 29161
 > -- 6815
 < -- 202
 + -- 2629
 - -- 2230
-* -- 20394
-:= -- 35897
-add.period$ -- 599
+* -- 20381
+:= -- 35866
+add.period$ -- 597
 call.type$ -- 311
-change.case$ -- 2282
+change.case$ -- 2280
 chr.to.int$ -- 312
-cite$ -- 317
-duplicate$ -- 29181
-empty$ -- 23655
+cite$ -- 323
+duplicate$ -- 29161
+empty$ -- 23623
 format.name$ -- 3163
-if$ -- 60835
+if$ -- 60763
 int.to.chr$ -- 12
 int.to.str$ -- 1
-missing$ -- 3250
+missing$ -- 3246
 newline$ -- 939
 num.names$ -- 1262
-pop$ -- 14026
+pop$ -- 14052
 preamble$ -- 1
 purify$ -- 1984
 quote$ -- 0
-skip$ -- 6179
+skip$ -- 6173
 stack$ -- 0
-substring$ -- 28936
-swap$ -- 7716
+substring$ -- 28890
+swap$ -- 7688
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2730
-warning$ -- 6
-while$ -- 2075
+warning$ -- 12
+while$ -- 2072
 width$ -- 0
-write$ -- 3527
-(There were 6 warnings)
+write$ -- 3521
+(There were 23 error messages)
