@@ -1,28 +1,6 @@
 % This file was created with JabRef 2.10.
 % Encoding: UTF-8
 
-@PREAMBLE{%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% How to document a reference
-%%
-%%%% A reference'id should be the name(s) of the contributors with their first letter in capital 
-%%%%% followed by the year of publication with two figures if there are less than four authors, 
-%%% and the name of the first contributor with the first letter in capital followed by "etal"
-%%%% and the year of publication with two figures if there are four authors or more.
-%%%% Exemples
-%%%%%
-%%%%% Less than four authors: 
-%%%%    @Article{BarabasiAlbert99,
-%%%%  Author = {Barab{\'{a}}si, A. L. and Albert, R. }
-%%%      etc. } 
-%%%%%
-%%%%% More that four authors:
-%%%%% @Article{Francoetal95,
-%%%%% Author = {Franco, V. and Piirto, R.and Hu, H.-Y. and Lewenstein, B.V. and Underwood, R. and Vidal, N.K.}
-%%%      etc. } 
-%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-}
-
 
 @Article{AaltonenSeitler16,
   Title                    = {{Cumulative Growth in User-Generated Content Production: Evidence from Wikipedia}},

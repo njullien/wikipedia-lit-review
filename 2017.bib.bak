@@ -1,0 +1,33 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Article{DangNguyenDejeanJullien17,
+  Title                    = {Do open online projects create social norms?},
+  Author                   = {Dang Nguyen, Godefroy and Dejean, Sylvain and Jullien, Nicolas},
+  Journal                  = {Journal of Institutional Economics},
+  Year                     = {2017},
+  Pages                    = {1--26},
+
+  Owner                    = {nicolas},
+  Publisher                = {Cambridge University Press},
+  Timestamp                = {2017.09.01}
+}
+
+@Article{ShaneSimpson17,
+  Title                    = {Examining potential mechanisms underlying the Wikipedia gender gap through a collaborative editing task },
+  Author                   = {Christina Shane-Simpson and Kristen Gillespie-Lynch},
+  Journal                  = {Computers in Human Behavior },
+  Year                     = {2017},
+  Pages                    = {312 - 328},
+  Volume                   = {66},
+
+  Abstract                 = {Abstract Research has identified a significant gender gap on the online encyclopedia, Wikipedia. The current research used a mixed experimental (type of feedback) and quasi-experimental (gender) design to examine the editing behaviors of college students during a public, collaborative editing task to identify potential factors underlying the Wikipedia gender gap. Overall, women edited more than men. However, in the editing condition most akin to Wikipedia, wherein female peer editors were underrepresented in the essay edits and feedback from peers was neutral, men trended towards adding more content than woman. Women added more content than men in this male-dominated essay condition when peer editors modeled constructive feedback. Although the type of edits from peer editors was counterbalanced, participants typically viewed an anonymous peer editor as male. Women viewed the anonymous editor as more critical of the participant's own work when compared with a gender-neutral peer editor. These results suggest that visible female editors on Wikipedia and broader encouragement of the use of constructive feedback may begin to alleviate the Wikipedia gender gap. Furthermore, the relatively high proportion of anonymous editors may exacerbate the Wikipedia gender gap, as anonymity may often be perceived as male and more critical. },
+  Doi                      = {https://doi.org/10.1016/j.chb.2016.09.043},
+  ISSN                     = {0747-5632},
+  Keywords                 = {Online},
+  Owner                    = {nicolas},
+  Timestamp                = {2017.09.01},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0747563216306781}
+}
+
