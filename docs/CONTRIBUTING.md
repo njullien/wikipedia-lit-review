@@ -67,9 +67,13 @@ $ git commit -m &quot;A brief summary of the commit
 <h1>
 When and how can you add yourself to the liste of authors?</h1>
 Anyone who has made a big change.
+
 Non-exhaustive list of what a big change is:
+
 - English editing,
+
 - addition of a reference and of its discussion in the text
+
 - ... 
 
 
