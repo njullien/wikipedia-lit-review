@@ -1,6 +1,6 @@
 
-<pre class="western">I'm really glad you're reading this, because we need volunteer contributors to help this project come to fruition.
-<span lang="en-US">first of all, thanks for taking the time to contribute!</span>
+I'm really glad you're reading this, because we need volunteer contributors to help this project come to fruition.
+first of all, thanks for taking the time to contribute!
 </pre><h1 lang="en-US" class="western">
 What is this project about&nbsp;?</h1>
 <pre lang="en-US" class="western">
