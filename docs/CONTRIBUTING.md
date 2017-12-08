@@ -13,10 +13,10 @@ Secondly, the articles referenced in the review have to have been presented to a
 
 I've tried to make this document as modular as possible, based on the different categories proposed by Hess and Ostrom in their knowledge common framework (see the .pdf file too).
 
-<img src="../Institutional_Analysis_and_Developement_framework_Hess-Ostrom.png" name="Image1" align="bottom" width="430" height="529" border="0"/>
+<img src="../Institutional_Analysis_and_Developement_framework_Hess-Ostrom.png" name="Image1"  border="0"/>
 
 
-This framework is detailled bellow in the case of Wikipedia (adaptation of the Model of group processes in open content communities, from Carillo and Okoli (2011), figure 1 page 210, improved in the outcomes, and the retro-action, mainly). </span>
+This framework is detailled bellow in the case of Wikipedia (adaptation of the Model of group processes in open content communities, from Carillo and Okoli (2011), figure 1 page 210, improved in the outcomes, and the retro-action, mainly). 
 
 It is also de the detail of each chapter, and section of the document and of the project&nbsp;:</span>
 </pre><h3 class="western">
@@ -43,9 +43,9 @@ Chapter: Evaluation, points of view.</h3>
 <span lang="en-US">Section: Product quality</span>
 <span lang="en-US">SubSection: Global coverage</span>
 <span lang="en-US">SubSection: Articles quality</span>
-<span lang="en-US">SubSection: Conclusion</span>
+SubSection: Conclusion</span>
 
-<img src="" name="Image2" align="bottom" width="430" height="529" border="0"/>
+<img src="../New_model_of_group_processes_in_open_content_communities.png" name="Image2" align="bottom" border="0"/>
 
 
 <span lang="en-US"><b>Please, do not change this structure, expect if it has been discussed and agreeed!</b></span></pre><h1 lang="en-US" class="western">
