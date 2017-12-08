@@ -24,31 +24,29 @@ This framework is detailled bellow in the case of Wikipedia (adaptation of the M
 
 It is also de the detail of each chapter, and section of the document and of the project:
 
-<h3>
-Chapter Inputs</h3>
-Section: Environment, Rules in Use
-Section: Why do they participate?
-<h3>
-Chapter: The process(es), or the patterns of interaction.</h3>
-Section: The contributors, their activity and roles (what they do)
-Section: Pieces of knowledge, articles, and global structure
-SubSection: Structure of the project
-SubSection:Structure of articles edition
-Section:The organization, structure, and governance of the project
-SubSection: People, team and articles
-SubSection: The life of an article: creation and deletion, redaction, and promotion
-SubSection: Management and leadership
-SubSection:Organization, process, a conclusion
-<h3>
-Chapter: Evaluation, points of view.</h3>
-Section: process Quality and Efficiency.
-Section: Users’ experience
-SubSection: Developers’ experience
-SubSection: Readers’ experience
-Section: Product quality
-SubSection: Global coverage
-SubSection: Articles quality
-SubSection: Conclusion
+<h3>Chapter Inputs</h3>
+<h4>Section: Environment, Rules in Use</h4>
+<h4>Section: Why do they participate?</h4>
+
+<h3>Chapter: The process(es), or the patterns of interaction.</h3>
+<h4>Section: The contributors, their activity and roles (what they do)</h4>
+<h4>Section: Pieces of knowledge, articles, and global structure</h4>
+<h5>SubSection: Structure of the project</h5>
+<h5>SubSection:Structure of articles edition</h5>
+<h4>Section:The organization, structure, and governance of the project</h4>
+<h5>SubSection: People, team and articles</h5>
+<h5>SubSection: The life of an article: creation and deletion, redaction, and promotion</h5>
+<h5>SubSection: Management and leadership</h5>
+<h5>SubSection:Organization, process, a conclusion</h5>
+<h3>Chapter: Evaluation, points of view.</h3>
+<h4>Section: process Quality and Efficiency</h4>
+<h4>Section: Users’ experience</h4>
+<h5>SubSection: Developers’ experience</h5>
+<h5>SubSection: Readers’ experience</h5>
+<h4>Section: Product quality</h4>
+<h5>SubSection: Global coverage</h5>
+<h5>SubSection: Articles quality</h5>
+<h5>SubSection: Conclusion</h5>
 
 
 <b>Please, do not change this structure, expect if it has been discussed and agreeed!</b>
