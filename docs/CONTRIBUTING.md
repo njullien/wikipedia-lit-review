@@ -1,26 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2017-12-08T14:11:11.072410565"/>
-	<style type="text/css">
-		@page { margin: 2cm }
-		p { margin-bottom: 0.25cm; line-height: 120% }
-		pre.cjk { font-family: "Courier New", monospace }
-		h1 { margin-bottom: 0.21cm }
-		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt }
-		h1.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 18pt }
-		h1.ctl { font-family: "FreeSans"; font-size: 18pt }
-		h3.western { font-family: "Liberation Sans", sans-serif; font-size: 14pt }
-		h3.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 14pt }
-		h3.ctl { font-family: "FreeSans"; font-size: 14pt }
-		a:link { so-language: zxx }
-	</style>
-</head>
-<body lang="fr-FR" dir="ltr">
+
 <pre class="western">I'm really glad you're reading this, because we need volunteer contributors to help this project come to fruition.
 <span lang="en-US">first of all, thanks for taking the time to contribute!</span>
 </pre><h1 lang="en-US" class="western">
